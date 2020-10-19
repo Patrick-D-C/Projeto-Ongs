@@ -1,26 +1,38 @@
+// import React, {useState} from 'react';
+//import Header from './Header';
+
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/app.css'
+
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Achei bonito
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes />
+  )
+
+
+
+
+
+
+  //return (
+  //  <Header title="Semana OmniStack"/>
+  //);
+//   const [counter, setCounter ] = useState(0);
+
+//  // Array [valor , funcão de atualizacao]
+//   function increment(){
+//     setCounter(counter + 1);
+//   }
+// return (
+//   <div>
+//     <Header>Contador: {counter}</Header>
+//     <button onClick={increment}>Incrementar</button>
+//   </div>
+// );
 }
 
 export default App;
